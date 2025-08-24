@@ -69,8 +69,8 @@
 
     /* letter spacing */
 
-    --traking-n-025:-0.025px;
-    --traking-p-05:0.5px;
+    --tracking-n-025:-0.025px;
+    --tracking-p-05:0.5px;
 
     /* border radius  */
     --radius-small:8px;
@@ -175,14 +175,14 @@ body{
     font-weight: var(--weight-bold);
     font-size: var(--fs-headline-large);
     line-height: var(--lh-headline-large);
-    letter-spacing: var(--traking-n-025);
+    letter-spacing: var(--tracking-n-025);
 }
 
 .headline-medium{
     font-weight: var(--weight-bold);
     font-size: var(--fs-headline-medium);
     line-height: var(--lh-headline-medium);
-    /* letter-spacing: var(--traking-n-025); */
+    /* letter-spacing: var(--tracking-n-025); */
 }
 .headline-small{
     font-weight: var(--weight-bold);
@@ -225,7 +225,7 @@ body{
     font-size: var(--fs-label-medium);
     line-height: var(--lh-label-medium);
     font-weight: var(--weight-semibold);
-    letter-spacing: var(--traking-p-05);
+    letter-spacing: var(--tracking-p-05);
     /* letter-spacing: var(--traking-n-025); */
 }   
 .material-symbols-rounded {
@@ -384,7 +384,7 @@ body{
     rotate:2deg;
 }
 
-.card:where(.badge,.icon-btn){
+.card .badge, .card .icon-btn{
     position:absolute;
     top:20px;
 }
@@ -406,7 +406,7 @@ body{
 }
 .fav-btn.active .material-symbols-rounded{
     font-variation-settings: 'FILL' 1;
-    color:var(--success-100);
+    color:var(--primary-100);
 }
 .card:where(:hover, :focus-within) .icon-btn{
     scale:1;
@@ -452,8 +452,8 @@ body{
     align-items: center;
     gap:4px;
     color: var(--neutral-20);
-    font-size: var(--font-size-300);
-    font-weight: var(--font-weight-500)
+    font-size: var(--fs-body-medium);
+    font-weight: var(--fs-weight-medium)
 }
 
 .headline-large,
@@ -585,7 +585,7 @@ body{
 }
 
 .hero-title{
-    color:var(--neweutral-100);
+    color:var(--neutral-100);
 }
 
 .hero-text{
@@ -725,7 +725,7 @@ body{
     gap:8px;
 }
 
-.fearture-icon{
+.feature-icon{
     color:var(--primary-100);
     font-size :2.2rem;
 }
@@ -753,8 +753,8 @@ body{
     color:var(--primary-100);
     border-radius: var(--radius-circle);
     animation: pulse 1.5s var(--transition-easing-quick) forwards infinite;
-    cursor: pointer;
-    transition: var(--transition-duration-quick) var(--transition-easing-quick);
+    /* cursor: pointer;
+    transition: var(--transition-duration-quick) var(--transition-easing-quick); */
 }
 
 @keyframes pulse{
@@ -804,7 +804,7 @@ body{
     display : grid;
     place-items: center;
     background-color: #000000BF;
-    counter-reset: var(--neutral-100);
+    color: var(--neutral-100);
 }
 
 
@@ -1058,7 +1058,7 @@ body{
         * FOOTER 
         */
 
-        .footer-top .conatiner {
+        .footer-top .container {
             padding-block: 80px;
             grid-template-columns: repeat(3,1fr);
 
