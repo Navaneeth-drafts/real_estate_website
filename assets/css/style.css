@@ -453,7 +453,7 @@ body{
     gap:4px;
     color: var(--neutral-20);
     font-size: var(--fs-body-medium);
-    font-weight: var(--fs-weight-medium)
+    font-weight: var(--weight-medium);
 }
 
 .headline-large,
@@ -675,7 +675,8 @@ body{
 
 
 
-/**property
+/**
+
 **property
 **/
 
@@ -694,7 +695,6 @@ body{
     gap: 16px;
     margin-block-start: 32px;
 }
-
 
 .feature-banner{
     aspect-ratio: 3/2;
